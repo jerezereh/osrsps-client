@@ -23,7 +23,7 @@ import org.necrotic.Configuration;
 public class CacheDownloader {
 
 	private static final String CACHE_FILE_NAME = "NecroticCache.zip"; //The name of the actual .zip file
-	private static final String CACHE_URL = ""+CACHE_FILE_NAME; //The url to the .zip file
+	private static final String CACHE_URL = "http://107.204.81.194/"+CACHE_FILE_NAME; //The url to the .zip file
 	private static final String NEWEST_VERSION_FILE_URL = ""; //The url to the current cache_versiont txt file
 	private static final String CURRENT_VERSION_FILE = "cache_version.txt"; //The location of the local cache_version txt file
 	
@@ -46,7 +46,7 @@ public class CacheDownloader {
 					} else {
 						System.out.println("Naturally found cache update. No manual overrides detected, proceeding as normal. Current: "+current+", Newest: "+newest);
 					}
-//					downloadCache();
+					downloadCache();
 					unzipCache();
 					setLatestCacheVersion(newest);
 				}
