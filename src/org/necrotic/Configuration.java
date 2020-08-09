@@ -75,8 +75,8 @@ public class Configuration {
 	public final static String SERVER_HOST() {
 		// return "world1.necrotic.org"; // your live server's IP
 
-		return "107.204.81.194";
-//		 return "localhost";
+		return "107.204.80.66";
+//		return "localhost";
 	}
 
 }
