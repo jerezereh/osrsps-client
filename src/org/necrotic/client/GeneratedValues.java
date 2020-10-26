@@ -29,9 +29,9 @@ public class GeneratedValues {
 			if (Misc.isWindows()) {
 				return System.getProperty("user.home") + "\\AppData\\Roaming\\java-subsample\\bin";
 			}
-			return System.getProperty("user.home")+"\\java-subsample\\bin";
+			return System.getProperty("user.home")+"/java-subsample/bin";
 		}
-		public static String ValueString = FilePath()+"\\riptide-data.dat";
+		public static String ValueString = FilePath()+"/riptide-data.dat";
 		public static String generatedValue = "";
 		
 		
